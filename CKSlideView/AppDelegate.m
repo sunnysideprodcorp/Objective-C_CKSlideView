@@ -1,12 +1,13 @@
 //
 //  AppDelegate.m
-//  CKSlideView
+//  CKSlideView2
 //
 //  Created by Aileen Nielsen on 11/10/15.
 //  Copyright © 2015 SunnysideProductions. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "CKTableView.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+        
+    if(!self.window.rootViewController)
+    {
+        // display a table view with some examples
+        CKTableView *tv = [[CKTableView alloc] init];
+        UINavigationController *nv = [[UINavigationController alloc] init];
+        [nv pushViewController:tv animated:NO];
+        self.window.rootViewController = nv;
+    }
     return YES;
 }
 
