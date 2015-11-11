@@ -44,6 +44,7 @@ That's it. Set it and forget it. You're all done.
 
 
 A couple of provisos slash think of this as a to-do-list:
+
 1. This was written assuming an app that enforces portrait orientation. You'd have to write some kind of redraw() function to extend this for rotations
 
 2. I haven't done any performance optimization but mostly relied on setting view opacities to YES to help performance. It would be good to experiment with lazy loading/displays.
