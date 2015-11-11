@@ -42,9 +42,13 @@ Then you can load this. I assume in your viewDidLoad for this CKSlideViewSubclas
 
 That's it. Set it and forget it. You're all done. 
 
+
 A couple of provisos slash think of this as a to-do-list:
 1. This was written assuming an app that enforces portrait orientation. You'd have to write some kind of redraw() function to extend this for rotations
+
 2. I haven't done any performance optimization but mostly relied on setting view opacities to YES to help performance. It would be good to experiment with lazy loading/displays.
+
 3. Would be nice to move views along a user-defined path rather than just along a straight line with an angle.
+
 4. Would be good to offer other property adjustments depending on scrolling, such as opacity. This would be easy to implement if desired so I may leave this as an exercise to the reader.
 
