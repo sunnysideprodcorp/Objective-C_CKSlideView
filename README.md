@@ -1,6 +1,6 @@
 ##CKSlideView
 
-This app was inspired by the iPad NYT Cooking App, which features photos of food that drift apart and back together as you page through the offerings. It's quite small, and is designed for cases where you will put all your content in a horizontal scroll view. Here's what it looks like. Different looks depend on whether you have paging enabled and what kind of trajectory you assign to your moving views.
+This app was inspired by the iPad NYT Cooking App, which features photos of food that drift apart and back together as you page through the offerings. It's quite small, and is designed for cases where you will put all your content in a horizontal scroll view. Different looks depend on whether you have paging enabled and what kind of trajectory you assign to your moving views. Here's what it looks like:
 
 ![example animation](https://github.com/sunnysideprodcorp/CKSlideView/blob/master/animation.gif)
 
